@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moosipurk v0.1</title>
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENÜÜ -->
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#home-view" class="menu-link home-view active-menu">Avaleht</a></li>
+            <li class="menu-item"><a href="#list-view" class="menu-link list-view">Loend</a></li>
+            <li class="menu-item"><a href="#manage-view" class="menu-link manage-view">Haldus</a></li>
+        </ul>
+    </nav>
+
+    <main role="main">
+
+        <!-- LOEND -->
+        <div id="list-view">
+            <h1>Loend</h1>
+            <p class="loading">Laeb...</p><br>
+            <input type="search" placeholder="Enter keyword" id="search"><br>
+            <ul class="list-of-jars"></ul>
+        </div>
+
+        <!-- HALDUSE LEHT -->
+        <div id="manage-view">
+            <h1>Haldus</h1>
+
+            <label for="title">Nimi: </label><br>
+            <input type="text" name="title" class="title"><br>
+
+            <label for="ingredients">Koostis: </label><br>
+            <input type="text" name="ingredients" class="ingredients"><br>
+
+            <button class="add-new-jar pull-right">Lisa uus purk</button>
+        </div>
+
+        <!-- AVALEHT -->
+        <div id="home-view">
+            <h1>Avaleht</h1>
+            <p>Tere tulemas rakenduse avalehele!</p>
+            <p>Kogu rakendus on tegelikult üks leht!</p>
+        </div>
+
+    </main>
+
+</body>
+</html>
